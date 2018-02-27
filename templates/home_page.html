@@ -24,6 +24,14 @@
                 <p>{{ content }}</p>
             </div>
         </div>
+        {% if premium_content %}
+        <div class="row">
+            <div class="col">
+                <h1>PREMIUM</h1>
+                {{ premium_content }}
+            </div>
+        </div>
+        {% endif %}
     </div>
 
     <!-- Optional JavaScript -->

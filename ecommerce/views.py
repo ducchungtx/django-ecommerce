@@ -10,6 +10,8 @@ def home_page(request):
         "title": "Hello world",
         "content": "Welcome to home page"
     }
+    if(request.user.is_authenticated()):
+        context["premium_content"] = "YEAHHHHHHHH"
     return render(request, 'home_page.html', context)
 
 def contact_page(request):
